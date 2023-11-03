@@ -67,7 +67,6 @@ const Label = styled.span`
 	font-size: 0.875em;
 	line-height: 1.375rem;
 	color: #666;
-	margin-bottom: 16px;
 	overflow: hidden;
 	white-space: normal;
 	text-overflow: ellipsis;
@@ -78,11 +77,17 @@ const Label = styled.span`
 
 	${media.custom(1023)} {
 		font-size: 0.75em;
-		margin-bottom: 9px;
 	}
 
 	${media.custom(767)} {
 		-webkit-line-clamp: 2;
+	}
+`;
+
+const DateLabel = styled(Label)`
+	margin-bottom: 16px;
+	${media.custom(1023)} {
+		margin-bottom: 9px;
 	}
 `;
 
@@ -113,6 +118,7 @@ export default function HomePostItem({ slug, post }: Props) {
 				<LabelContainer>
 					<TitleLabel>{post.title}</TitleLabel>
 					<Label>{post.description}</Label>
+					<DateLabel className="date">{post.created_at}</DateLabel>
 					<MoreLabel className="more">{"더보기 >"}</MoreLabel>
 				</LabelContainer>
 				{image && <GatsbyImage className="thumbnail" image={image} alt="post thumbnail" />}

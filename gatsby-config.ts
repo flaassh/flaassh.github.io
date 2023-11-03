@@ -2,8 +2,10 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
 	siteMetadata: {
-		title: `Flash의 블로그`,
-		siteUrl: `https://flaassh.github.io`,
+		title: "Flash의 블로그",
+		author: "flash",
+		siteUrl: "https://flaassh.github.io",
+		description: "누구나 쉽게 따라할 수 있는, 남녀노소 모두를 위한 개발 블로그",
 	},
 	// More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
 	// If you use VSCode you can also use the GraphQL plugin
@@ -20,11 +22,74 @@ const config: GatsbyConfig = {
 			},
 		},
 		{
+			resolve: "gatsby-plugin-feed",
+			options: {
+				query: `
+					{
+						site {
+							siteMetadata {
+								title
+								description
+								siteUrl
+							}
+						}
+					}
+				`,
+				feeds: [
+					{
+						serialize: ({ query: { site, allMdx } }) => {
+							return allMdx.edges.map(
+								(edge: {
+									node: {
+										frontmatter: { created_at: string };
+										excerpt: string;
+										fields: { slug: string };
+										body: string;
+									};
+								}) => {
+									return {
+										...edge.node.frontmatter,
+										description: edge.node.excerpt.substring(0, 400),
+										date: edge.node.frontmatter.created_at,
+										url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+										guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+										custom_elements: [{ "content:encoded": edge.node.body }],
+										copyright: `© 2023-${new Date().getFullYear()} flash All rights reserved.`,
+									};
+								},
+							);
+						},
+						query: `
+						  {
+							allMdx(sort: { frontmatter: { created_at: DESC }}, limit: 1000) {
+							  edges {
+								node {
+								  excerpt
+								  body
+								  fields { slug }
+								  frontmatter {
+									title
+									created_at
+								  }
+								}
+							  }
+							}
+						  }
+						`,
+						output: "/feed.xml",
+						title: "Flash의 블로그",
+						site_url: `https://flaassh.github.io?utm_source=blog-feed&utm_medium=feed&utm_campaign=feed`,
+						description: "누구나 쉽게 따라할 수 있는, 남녀노소 모두를 위한 개발 블로그",
+					},
+				],
+			},
+		},
+		{
 			resolve: "gatsby-plugin-mdx",
 			options: {
 				gatsbyRemarkPlugins: [
 					{
-						resolve: `gatsby-remark-images`,
+						resolve: "gatsby-remark-images",
 						options: {
 							maxWidth: 860,
 						},

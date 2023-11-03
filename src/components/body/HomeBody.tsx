@@ -31,9 +31,8 @@ export default function HomeBody() {
 				edges {
 					node {
 						id
-						body
 						frontmatter {
-							created_at
+							created_at(formatString: "YY.MM.DD")
 							description
 							title
 							thumbnail {
