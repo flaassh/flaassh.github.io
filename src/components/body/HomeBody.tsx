@@ -27,7 +27,7 @@ const InnerContainer = styled.div`
 export default function HomeBody() {
 	const data = useStaticQuery(graphql`
 		query AllMdx {
-			allMdx(sort: { frontmatter: { created_at: DESC } }) {
+			allMdx(sort: { frontmatter: { created_at: DESC } }, limit: 10) {
 				edges {
 					node {
 						id

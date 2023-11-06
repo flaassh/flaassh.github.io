@@ -61,7 +61,10 @@ const config: GatsbyConfig = {
 						},
 						query: `
 						  {
-							allMdx(sort: { frontmatter: { created_at: DESC }}, limit: 1000) {
+							allMdx(
+							  sort: {frontmatter: {created_at: DESC}}
+							  limit: 1000
+							) {
 							  edges {
 								node {
 								  excerpt

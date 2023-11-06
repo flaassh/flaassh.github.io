@@ -89,6 +89,10 @@ const MdxContainer = styled.div`
 		margin: 22px 0 15px;
 	}
 
+	h4 {
+		margin-bottom: 10px;
+	}
+
 	h6 {
 		color: ${palette.gray[5]};
 	}
