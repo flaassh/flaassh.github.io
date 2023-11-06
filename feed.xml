@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Flash의 블로그]]></title><description><![CDATA[누구나 쉽게 따라할 수 있는, 남녀노소 모두를 위한 개발 블로그]]></description><link>https://flaassh.github.io?utm_source=blog-feed&amp;utm_medium=feed&amp;utm_campaign=feed</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 06 Nov 2023 01:47:47 GMT</lastBuildDate><item><title><![CDATA[[gatsby] mdx 기반 블로그 만들기-1]]></title><description><![CDATA[markdown, md 또는 mdx 기반의 블로그를 만들 때 가장 많은 선택을 받는 프레임워크들은 크게 세 가지가 있죠. 바로 jekyll, Hugo, Gatsby인데요.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Flash의 블로그]]></title><description><![CDATA[누구나 쉽게 따라할 수 있는, 남녀노소 모두를 위한 개발 블로그]]></description><link>https://flaassh.github.io?utm_source=blog-feed&amp;utm_medium=feed&amp;utm_campaign=feed</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 06 Nov 2023 07:02:58 GMT</lastBuildDate><item><title><![CDATA[[gatsby] mdx 기반 블로그 만들기-1]]></title><description><![CDATA[markdown, md 또는 mdx 기반의 블로그를 만들 때 가장 많은 선택을 받는 프레임워크들은 크게 세 가지가 있죠. 바로 jekyll, Hugo, Gatsby인데요.
 
 이 중 오늘은 Gatsby를 사용해서 블로그를 만드는 방법에 대해 알아보도록…]]></description><link>https://flaassh.github.io/posts/2023/09/gatsby-mdx-blog-1/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/gatsby-mdx-blog-1/</guid><pubDate>Fri, 08 Sep 2023 13:00:00 GMT</pubDate><content:encoded>
 markdown, md 또는 mdx 기반의 블로그를 만들 때 가장 많은 선택을 받는 프레임워크들은 크게 세 가지가 있죠.
@@ -505,7 +505,7 @@ react-native 0.7 버전 이후로 새로 만든 프로젝트가 실행 중 오�
 
 Unable to boot device in current state: Booted 라는 문구가 뜨면서 말이죠.
 
-이런 경우 해결은 [이 포스팅](/)을 확인해주세요.
+이런 경우 해결은 [이 포스팅](/posts/2023/09/react-native-unable-to-boot-device)을 확인해주세요.
 
 ```bash
 # ios test
@@ -523,8 +523,77 @@ yarn android
 
 다음 포스팅에서는 react-navigation의 navigate, push, replace 등의 화면 전환 함수들을 어떤 상황에
 어떻게 사용해야 하는지에 대해 알아보도록 해요.</content:encoded></item><item><title><![CDATA[[gatsby] mdx 코드에 prism-react-renderer 적용하기]]></title><link>https://flaassh.github.io/posts/2023/09/gatsby-prismjs-react-renderer/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/gatsby-prismjs-react-renderer/</guid><pubDate>Mon, 04 Sep 2023 13:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[[mac] iTerm2 설치]]></title><link>https://flaassh.github.io/posts/2023/09/install-iterm/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/install-iterm/</guid><pubDate>Mon, 04 Sep 2023 13:00:00 GMT</pubDate><content:encoded>
-</content:encoded></item><item><title><![CDATA[[react-native] mac m1 환경 설정 및 설치 방법]]></title><link>https://flaassh.github.io/posts/2023/09/react-native-setting-1/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/react-native-setting-1/</guid><pubDate>Sat, 02 Sep 2023 13:00:00 GMT</pubDate><content:encoded>
-</content:encoded></item><item><title><![CDATA[[react-native] ㅑ내 ㄴ]]></title><link>https://flaassh.github.io/posts/2023/09/react-native-unable-to-boot-device/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/react-native-unable-to-boot-device/</guid><pubDate>Sat, 02 Sep 2023 13:00:00 GMT</pubDate><content:encoded>
+</content:encoded></item><item><title><![CDATA[[react-native] ios simulator unable to boot device in current state: Booted 오류 해결]]></title><description><![CDATA[오늘은 react-native 0.7 버전 이후에 ios 시뮬레이터를 실행시키면 발생하는 unable to boot device in current state: Booted 오류를 해결하는 방법에 대해 알아봐요. 오류가 나는 이유부터 알아보자면…]]></description><link>https://flaassh.github.io/posts/2023/09/react-native-unable-to-boot-device/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/react-native-unable-to-boot-device/</guid><pubDate>Sun, 03 Sep 2023 11:05:20 GMT</pubDate><content:encoded>
+import image from &apos;../../../images/2023/09/boot-7.webp&apos;;
+
+![](../../../images/2023/09/boot-0.webp)
+
+오늘은 react-native 0.7 버전 이후에 ios 시뮬레이터를 실행시키면 발생하는 unable to boot device in current state: Booted 오류를 해결하는 방법에 대해 알아봐요.
+
+오류가 나는 이유부터 알아보자면 시뮬레이터를 실행시키기 위해 터미널을 실행시켜야 하는데 해당 권한이 존재하지 않아서 발생하는 문제에요.
+
+그럼 이제 해결 방법에 대해 알아볼까요?
+
+---
+
+## 1. 해결 방법 
+
+### 1-1. 프로젝트 폴더 node_modules 열기
+
+현재 프로젝트의 폴더를 열어서 node_modules 폴더를 열어주세요.
+
+![](../../../images/2023/09/boot-1.webp)
+
+### 1-2. react-native 폴더 열기
+
+node_modules 폴더 안에서 react-native 폴더를 찾아서 열어주세요.
+
+![](../../../images/2023/09/boot-2.webp)
+
+### 1-3. scripts 폴더 열기
+
+./node_modules/react-native 폴더 안에서 scripts 폴더를 찾아서 열어주세요.
+
+![](../../../images/2023/09/boot-3.webp)
+
+### 1-4. launchPackager.command 파일 다른 프로그램으로 열기
+
+./node_modules/react-native/scripts 폴더 안에서 launchPackager.command 파일을 우클릭해서 아래 이미지와 같이 다른 파일로 열기를 클릭해요.
+
+![](../../../images/2023/09/boot-4.webp)
+
+### 1-5. iTerm.app으로 앱 열기
+
+아래 이미지처럼 iTerm.app으로 앱을 설정하고 Always Open With 체크 박스를 클릭한 후 열기를 클릭해요.
+
+![](../../../images/2023/09/boot-5.webp)
+
+### 1-6. iTerm 앱 확인
+
+위에서 열기를 클릭하면 아래와 같이 iTerm이 실행되는 걸 확인하고 창을 꺼주세요.
+
+![](../../../images/2023/09/boot-6.webp)
+
+### 1-7. 다시 앱 실행
+
+원하시는 방식으로 앱을 실행시켜 주세요. 
+
+```bash
+npm run ios
+
+# or 
+# yarn ios
+```
+
+&lt;img src={image} style={{width: 250, margin: &quot;auto&quot;, display: &quot;block&quot;, marginBottom: 20}} /&gt;
+
+---
+
+## 정리하며
+
+오늘은 react-native 0.7 버전 이후에 ios 시뮬레이터를 실행시키면 발생하는 unable to boot device in current state: Booted 오류를 해결하는 방법에 대해 알아봤어요.
+
+이미지와 함께 보면서 따라오면 큰 어려움 없이 해결하실 수 있으니 차근차근 따라해서 해결하셨으면 좋겠어요.</content:encoded></item><item><title><![CDATA[[react-native] mac m1 환경 설정 및 설치 방법]]></title><link>https://flaassh.github.io/posts/2023/09/react-native-setting-1/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/react-native-setting-1/</guid><pubDate>Sat, 02 Sep 2023 13:00:00 GMT</pubDate><content:encoded>
 </content:encoded></item><item><title><![CDATA[[macOS] m1 homebrew 설치하기]]></title><description><![CDATA[인텔 맥과 다르게 m1 이상의 맥은 homebrew 설치 과정이 조금 추가되는데요. 오늘은 m1 맥에서 homebrew를 설치하는 방법에 대해 알아보도록 해요.
 
 1. homebrew 설치
