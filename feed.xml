@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Flash의 블로그]]></title><description><![CDATA[누구나 쉽게 따라할 수 있는, 남녀노소 모두를 위한 개발 블로그]]></description><link>https://flaassh.github.io?utm_source=blog-feed&amp;utm_medium=feed&amp;utm_campaign=feed</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 06 Nov 2023 07:02:58 GMT</lastBuildDate><item><title><![CDATA[[gatsby] mdx 기반 블로그 만들기-1]]></title><description><![CDATA[markdown, md 또는 mdx 기반의 블로그를 만들 때 가장 많은 선택을 받는 프레임워크들은 크게 세 가지가 있죠. 바로 jekyll, Hugo, Gatsby인데요.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Flash의 블로그]]></title><description><![CDATA[누구나 쉽게 따라할 수 있는, 남녀노소 모두를 위한 개발 블로그]]></description><link>https://flaassh.github.io?utm_source=blog-feed&amp;utm_medium=feed&amp;utm_campaign=feed</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 06 Nov 2023 08:36:52 GMT</lastBuildDate><item><title><![CDATA[[gatsby] mdx 기반 블로그 만들기-1]]></title><description><![CDATA[markdown, md 또는 mdx 기반의 블로그를 만들 때 가장 많은 선택을 받는 프레임워크들은 크게 세 가지가 있죠. 바로 jekyll, Hugo, Gatsby인데요.
 
 이 중 오늘은 Gatsby를 사용해서 블로그를 만드는 방법에 대해 알아보도록…]]></description><link>https://flaassh.github.io/posts/2023/09/gatsby-mdx-blog-1/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/gatsby-mdx-blog-1/</guid><pubDate>Fri, 08 Sep 2023 13:00:00 GMT</pubDate><content:encoded>
 markdown, md 또는 mdx 기반의 블로그를 만들 때 가장 많은 선택을 받는 프레임워크들은 크게 세 가지가 있죠.
@@ -62,7 +62,7 @@ Windows에서는 설치가 매우 간단해요.
 
 설치 중 이 화면이 나오면 체크박스를 클릭 후 진행해주세요!
 
-![node.js chocolatey](../../../images/2023/09/gatsby-mdx-blog-1-1.jpeg)
+![node.js chocolatey](../../../images/2023/09/gatsby-mdx-blog-1-1.webp)
 
 ### 1-2-2. Windows Git 설치하기
 
@@ -210,7 +210,7 @@ yarn develop
 
 [http://localhost:8000](http://localhost:8000) 주소를 브라우저로 입력했을 때 아래와 같은 화면이 나오면 성공이에요!
 
-![gatsby new project](../../../images/2023/09/gatsby-mdx-blog-1-2.png)
+![gatsby new project](../../../images/2023/09/gatsby-mdx-blog-1-2.webp)
 
 ---
 
@@ -517,13 +517,18 @@ yarn android
 
 ---
 
+## 전체 코드
+
+[https://github.com/flaassh/react-navigation-practice/tree/main/navigation-1](https://github.com/flaassh/react-navigation-practice/tree/main/navigation-1)
+
+---
+
 ## 정리하며
 
 오늘은 react-navigation을 이용하여 화면을 전환하는 방법을 간단한 코드를 작성해서 알아봤어요.
 
 다음 포스팅에서는 react-navigation의 navigate, push, replace 등의 화면 전환 함수들을 어떤 상황에
-어떻게 사용해야 하는지에 대해 알아보도록 해요.</content:encoded></item><item><title><![CDATA[[gatsby] mdx 코드에 prism-react-renderer 적용하기]]></title><link>https://flaassh.github.io/posts/2023/09/gatsby-prismjs-react-renderer/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/gatsby-prismjs-react-renderer/</guid><pubDate>Mon, 04 Sep 2023 13:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[[mac] iTerm2 설치]]></title><link>https://flaassh.github.io/posts/2023/09/install-iterm/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/install-iterm/</guid><pubDate>Mon, 04 Sep 2023 13:00:00 GMT</pubDate><content:encoded>
-</content:encoded></item><item><title><![CDATA[[react-native] ios simulator unable to boot device in current state: Booted 오류 해결]]></title><description><![CDATA[오늘은 react-native 0.7 버전 이후에 ios 시뮬레이터를 실행시키면 발생하는 unable to boot device in current state: Booted 오류를 해결하는 방법에 대해 알아봐요. 오류가 나는 이유부터 알아보자면…]]></description><link>https://flaassh.github.io/posts/2023/09/react-native-unable-to-boot-device/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/react-native-unable-to-boot-device/</guid><pubDate>Sun, 03 Sep 2023 11:05:20 GMT</pubDate><content:encoded>
+어떻게 사용해야 하는지에 대해 알아보도록 해요.</content:encoded></item><item><title><![CDATA[[react-native] ios simulator unable to boot device in current state: Booted 오류 해결]]></title><description><![CDATA[오늘은 react-native 0.7 버전 이후에 ios 시뮬레이터를 실행시키면 발생하는 unable to boot device in current state: Booted 오류를 해결하는 방법에 대해 알아봐요. 오류가 나는 이유부터 알아보자면…]]></description><link>https://flaassh.github.io/posts/2023/09/react-native-unable-to-boot-device/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/react-native-unable-to-boot-device/</guid><pubDate>Sun, 03 Sep 2023 11:05:20 GMT</pubDate><content:encoded>
 import image from &apos;../../../images/2023/09/boot-7.webp&apos;;
 
 ![](../../../images/2023/09/boot-0.webp)
@@ -593,8 +598,175 @@ npm run ios
 
 오늘은 react-native 0.7 버전 이후에 ios 시뮬레이터를 실행시키면 발생하는 unable to boot device in current state: Booted 오류를 해결하는 방법에 대해 알아봤어요.
 
-이미지와 함께 보면서 따라오면 큰 어려움 없이 해결하실 수 있으니 차근차근 따라해서 해결하셨으면 좋겠어요.</content:encoded></item><item><title><![CDATA[[react-native] mac m1 환경 설정 및 설치 방법]]></title><link>https://flaassh.github.io/posts/2023/09/react-native-setting-1/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/react-native-setting-1/</guid><pubDate>Sat, 02 Sep 2023 13:00:00 GMT</pubDate><content:encoded>
-</content:encoded></item><item><title><![CDATA[[macOS] m1 homebrew 설치하기]]></title><description><![CDATA[인텔 맥과 다르게 m1 이상의 맥은 homebrew 설치 과정이 조금 추가되는데요. 오늘은 m1 맥에서 homebrew를 설치하는 방법에 대해 알아보도록 해요.
+이미지와 함께 보면서 따라오면 큰 어려움 없이 해결하실 수 있으니 차근차근 따라해서 해결하셨으면 좋겠어요.</content:encoded></item><item><title><![CDATA[[mac] iTerm2 설치]]></title><description><![CDATA[오늘은 mac 필수 앱인 iTerm2를 설치하고 기본 터미널과 다르게 알록달록하게 테마를 적용해봐요. 1. iTerm2 설치
+
+설치는 brew로 해줄게요.
+
+만약 Homebrew가 설치되어 있지 않으시면 이 포스팅을 따라서 설치하고 돌아와주세요.
+
+이제…]]></description><link>https://flaassh.github.io/posts/2023/09/install-iterm/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/install-iterm/</guid><pubDate>Sat, 02 Sep 2023 13:00:00 GMT</pubDate><content:encoded>
+오늘은 mac 필수 앱인 iTerm2를 설치하고 기본 터미널과 다르게 알록달록하게 테마를 적용해봐요.
+
+---
+
+## 1. iTerm2 설치
+
+설치는 brew로 해줄게요.
+
+만약 Homebrew가 설치되어 있지 않으시면 [이 포스팅](/posts/2023/09/install-homebrew)을 따라서 설치하고 돌아와주세요.
+
+이제 아래 명령어를 터미널에 입력해서 설치해주세요.
+
+```bash
+brew install iterm2
+```
+
+## 2. oh-my-zsh 설치
+
+iterm2에서 여러 가지 테마를 적용하거나 자동완성 등의 기능을 적용하기 위해 zsh(Z shell)의 플러그인 중 하나인 oh-my-zsh를 설치해요.
+
+```bash
+sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
+```
+
+## 3. iterm 컬러 스킴 및 설정 변경
+
+### 3-1. 컬러 스킴 선택
+
+[공식 사이트](https://iterm2colorschemes.com/)에서 여러 컬러 스킴들을 확인 후 다운로드 받으세요.
+
+저는 개인적으로 파스텔톤이 이뻐서 아래의 Snazzy 컬러 스킴을 다운로드해서 사용 중이에요.
+
+&lt;a download=&quot;Snazzy.itermcolors&quot; href=&quot;/files/2023/09/Snazzy.itermcolors&quot;&gt;Snazzy 테마 다운로드&lt;/a&gt;
+
+어떤 테마든 다운로드 받으셨다면 더블 클릭하시면 자동으로 iterm2의 iTerm Color Preset에 추가되요.
+
+확인하기 위해 iTerm2를 실행시킨 후 (⌘ + ,)를 함께 눌러주세요.
+
+그리고 나온 아래와 같은 창에서 Profile -&gt; Colors -&gt; Color Presets... -&gt; Snazzy(또는 다운받은 컬러 스킴)를 선택해주세요.
+
+![](../../../images/2023/09/iterm-0.webp)
+
+### 3-2. 한글 깨짐 방지
+
+터미널에서 한글이 깨지는 경우가 많이 발생하는데 아래와 같이 설정해서 한글 깨짐을 방지해주세요.
+
+위와 같은 창에서 Profile -&gt; Text -&gt; Unicode normalization form: NFC 로 변경해주세요.
+
+![](../../../images/2023/09/iterm-1.webp)
+
+### 3-3. 상태바 추가
+
+위와 같은 창에서 Profile -&gt; Session -&gt; Status bar enabled를 체크해주시고 오른쪽의 Configure Status Bar를 클릭해주세요.
+
+![](../../../images/2023/09/iterm-2.webp)
+
+그럼 아래와 같은 창이 나오는데 터미널에 표시됐으면 하는 컴포넌트를 클릭하시고 확인을 눌러주세요.
+
+저는 CPU Utilization, Memory Utilization, Nework Throughput, git state 총 네 개를 사용하고 있어요.
+
+하단에 Auto-Rainbow에서 색 테마를 선택할 수 있으니 좋아하시는 테마를 선택해주세요.
+
+![](../../../images/2023/09/iterm-3.webp)
+
+저는 상태창이 하단에 있는게 좋아서 아래 이미지와 같이 수정했는데 이건 개인 취향이니까 마음껏 변경해주세요.
+
+Appearance -&gt; General -&gt; Status bar location 에서 변경하실 수 있어요.
+
+![](../../../images/2023/09/iterm-4.webp)
+
+## 4. 플러그인 설치
+
+이제 oh-my-zsh의 가장 강점인 플러그인들을 설치해봐요.
+
+저는 명령어 하이라이팅 플러그인([zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting))과 자동완성 플러그인([zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions))을 사용해요.
+
+```bash
+# zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+```
+
+다운로드가 완료되면 ~/.zshrc 파일을 열어서 수정해줘요.
+
+```bash
+vi ~/.zshrc
+```
+
+```bash
+# ~/.zshrc
+# ...
+
+plugins=(
+    # ...
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+    # ...
+)
+
+# ...
+```
+
+수정을 완료한 후 아래 명령어로 수정을 적용해줘요.
+
+```bash
+source ~/.zshrc
+```
+
+## 5. 테마 선택
+
+iterm2 프롬프트에는 [다양한 테마](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)가 존재하고 해요.
+
+가장 유명한 테마들에는 
+[powerlevel10k](https://github.com/romkatv/powerlevel10k), 
+[spaceship](https://spaceship-prompt.sh/), 
+[pure](https://github.com/sindresorhus/pure) 등 여러 종류가 있지만 그 중 저는  성능이 가장 좋은 powerlevel10k를 사용하고 있어요.
+
+저는 powerlevel10k를 설치해서 적용해볼게요. 다른 테마들도 비슷한 방식으로 설치하고 적용하면 되요.
+
+```bash
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+
+설치 완료 후 ~/.zshrc 파일을 열어서 ZSH_THEME 항목을 수정해요.
+
+```bash
+vi ~/.zshrc
+```
+
+아래와 같이 ZSH_THEME 부분을 수정해주세요.
+
+```bash
+# ~/.zshrc
+
+# ...
+
+ZSH_THEME=&quot;powerlevel10k/powerlevel10k&quot;
+
+# ...
+```
+
+수정 완료 후에는 아래와 같이 수정 내용을 적용해주세요.
+
+```bash
+source ~/.zshrc
+```
+
+위 명령어를 실행한 후 새로 탭을 열면, 대화형 설정창이 뜨고 상세하게 테마를 설정할 수 있어요. 
+
+만약, 다시 설정하고 싶으면 p10k configure를 입력해주세요.
+
+---
+
+## 정리하며
+
+오늘은 iTerm2 앱 설치와 알록달록한 테마와 편리한 플러그인들을 추가하는 방법에 대해 알아봤어요.
+
+제가 사용하고 있는 것들이라 100% 강추하는 것들이어서 여러분들한테도 도움이 됐으면 좋겠어요.
+
+다들 iTerm 잘 사용하시고 조금씩 원하는 방향으로 튜닝하시는 걸 추천드려요.</content:encoded></item><item><title><![CDATA[[macOS] m1 homebrew 설치하기]]></title><description><![CDATA[인텔 맥과 다르게 m1 이상의 맥은 homebrew 설치 과정이 조금 추가되는데요. 오늘은 m1 맥에서 homebrew를 설치하는 방법에 대해 알아보도록 해요.
 
 1. homebrew 설치
 
