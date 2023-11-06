@@ -1,130 +1,232 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Flash의 블로그]]></title><description><![CDATA[누구나 쉽게 따라할 수 있는, 남녀노소 모두를 위한 개발 블로그]]></description><link>https://flaassh.github.io?utm_source=blog-feed&amp;utm_medium=feed&amp;utm_campaign=feed</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Nov 2023 13:38:04 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><link>https://flaassh.github.io/posts/2023/09/react-native-unable-to-boot-device/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/react-native-unable-to-boot-device/</guid><content:encoded></content:encoded></item><item><title><![CDATA[제철 과일, 가을편!]]></title><description><![CDATA[유난히 더웠던 올해 여름이 지나가고 있네요. 여름이 지나면 선선하고 실한 과일도 많이 먹을 수 있는 계절인 가을이 찾아오는데요. 요새는 비닐하우스가 많아서 다양한 과일을 계절에 상관없이 먹을 수 있지만 그래도 제철 과일은 퀄리티가 다르잖아요~!
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Flash의 블로그]]></title><description><![CDATA[누구나 쉽게 따라할 수 있는, 남녀노소 모두를 위한 개발 블로그]]></description><link>https://flaassh.github.io?utm_source=blog-feed&amp;utm_medium=feed&amp;utm_campaign=feed</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 06 Nov 2023 01:47:47 GMT</lastBuildDate><item><title><![CDATA[[gatsby] mdx 기반 블로그 만들기-1]]></title><description><![CDATA[markdown, md 또는 mdx 기반의 블로그를 만들 때 가장 많은 선택을 받는 프레임워크들은 크게 세 가지가 있죠. 바로 jekyll, Hugo, Gatsby인데요.
 
-그래…]]></description><link>https://flaassh.github.io/posts/2023/10/autumnal-fruits/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/10/autumnal-fruits/</guid><pubDate>Tue, 31 Oct 2023 13:00:00 GMT</pubDate><content:encoded>
-{/* import apple from &quot;../../../images/2023/10/apples-1.webp&quot;; */}
+이 중 오늘은 Gatsby를 사용해서 블로그를 만드는 방법에 대해 알아보도록…]]></description><link>https://flaassh.github.io/posts/2023/09/gatsby-mdx-blog-1/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/gatsby-mdx-blog-1/</guid><pubDate>Fri, 08 Sep 2023 13:00:00 GMT</pubDate><content:encoded>
+markdown, md 또는 mdx 기반의 블로그를 만들 때 가장 많은 선택을 받는 프레임워크들은 크게 세 가지가 있죠.
 
-유난히 더웠던 올해 여름이 지나가고 있네요. 여름이 지나면 선선하고 실한 과일도 많이 먹을 수 있는 계절인 가을이 찾아오는데요.
+바로 [jekyll](https://jekyllrb-ko.github.io/), [Hugo](https://gohugo.io/), [Gatsby](https://www.gatsbyjs.com/)인데요.
 
-요새는 비닐하우스가 많아서 다양한 과일을 계절에 상관없이 먹을 수 있지만 그래도 제철 과일은 퀄리티가 다르잖아요~! 
-
-그래서 준비했습니다. 제철 과일 가을편!
+이 중 오늘은 Gatsby를 사용해서 블로그를 만드는 방법에 대해 알아보도록 해요.
 
 ---
 
-## 가을 제철 과일 종류와 효능은?
+## 1. Gatsby 설치 환경 만들기
 
-이제 제철 과일들을 소개하면서 여러 가지 효능들을 소개할 거에요!
+macOS와 Windows로 나눠서 설명을 할 예정인데 각 항목별로 이미 설치하신 경우에는 바로 스크롤을 아래로 내려주세요.
 
-아무리 좋은 효능이라도 너무 과하면 독이 되는 거 모두 아시죠?? 제철 과일이 아무리 맛있고 효능이 좋아도 우리 모두 정량 섭취를 통해서 더 건강한 사람들로 거듭나요!
+물론 [공식문서](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-0/#installation-guide)에도 이미 잘 정리되어 있으니 공식문서를 보고 진행하셔도 무방해요.
 
-## 1. [제철 과일] 사과
+### 1-1-1. macOS Node.js 설치하기
 
-![apples-1](../../../images/2023/10/apples-1.webp)
+우선 Homebrew가 설치됐다고 가정하고 시작할게요.
 
-{/* &lt;img  src={apple} style={{width: &quot;100%&quot;}} /&gt;
+만약 아직 설치하기 전이라면 [이 포스팅](/posts/2023/09/install-homebrew)을 보고 따라하시면 되요.
 
-{`http://localhost:8000${apple}`}
+brew가 설치된 상태에서 터미널을 열고 아래의 명령어를 실행 시켜요.
 
-&lt;MdxImage src={`http://localhost:8000${apple}`} /&gt;
-&lt;StaticImage src={`http://localhost:8000${apple}`} alt=&quot;hello&quot; /&gt;
-&lt;GatsbyImage image={`http://localhost:8000${apple}`} alt=&quot;hello&quot; /&gt; */}
+(만약 설치 중 오류가 발생하면 [애플 사이트](https://developer.apple.com/download/more/)에서 맥에 로그인한 계정으로 다시 로그인한 후 터미널에서 다시 진행해주세요.)
 
-첫 번째 제철 과일은 가장 익숙한 사과인데요! 사과는 예로부터 여러 장점을 가진 슈퍼 푸드로 알려져왔습니다. 그럼 어떤 장점들이 있는지 한 번 볼까요??
+이후에 소프트웨어 라이센스 동의 여부를 물어보면 동의하고 진행해주세요.
 
-1. 칼로리가 낮고 섬유질이 많아 체중 감량에 좋은 간식이에요.
-2. 산화 방지제가 풍부해서 손상으로부터 여러분의 세포를 보호해줘요.
-3. 면역력을 높이는 데 도움을 줄 수 있는 비타민 C의 좋은 공급원이에요.
-4. 콜레스테롤 수치를 낮춰주는 수용성 섬유질을 함유하고 있어요.
-5. 폴리페놀이 풍부해서 체내의 염증을 줄여줘요.
-6. 뇌 기능을 향상시키고 알츠하이머 병의 위험을 줄여줘요.
-7. 특정한 종류의 암의 위험을 줄여줘요.
-8. 폐 기능을 향상시키고 천식의 위험을 줄여줘요.
-9. 뼈 건강을 증진시키고 골다공증의 위험을 줄여줘요.
-10. 장에서 좋은 박테리아의 성장을 촉진함으로써 장 건강을 향상시켜요.
+```bash
+xcode-select --install
+```
 
-## 2. [제철 과일] 배
+이후 homebrew를 사용해서 node.js를 설치해줘요.
 
-![](../../../images/2023/10/pears-1.webp)
+```bash
+brew install node
+```
 
-두 번째 제철 과일은 배에요. 사과와 마찬가지로 우리에게 엄청 친숙한 과일이죠. 그런데 그런 배에 이런 효능들이 있다는 사실 알고 계셨나요??
+### 1-1-2. macOS Git 설치하기
 
-1. 수분과 섬유질이 풍부해서 갈증 해소에 따봉이에요.
-2. 소화에 좋아 장을 건강하게 해주고 변비를 예방해줘요.
-3. 알코올을 분해하는 효능이 있어 숙취 제거에 따봉이에요.
-4. 감기 예방과 가래 제거 효능이 있어 일교차가 심한 가을에 따봉이에요.
-5. 콜레스테롤 수치를 낮춰주는 효능이 있어 혈관을 깨끗하게 해줘요.
-6. 동맹경화 등의 심혈관 건강에 따봉이에요.
-7. 인체 열을 내려주는 효과가 있어 감기나 두통에 따봉이에요.
-8. 당분 함량은 높지만 자혈당 부하지수가 낮아서 혈당 안정에 따봉이에요.
-9. 칼륨 함량이 높아 고혈압 예방에 따봉이에요.
-10. 체내 노폐물과 독소 배출 효과가 있어 이뇨작요에 따봉이에요.
+git은 개발자라면 기본적으로 사용하는 프로그램이기 때문에 이미 다 설치한 상태겠지만 혹시나 해서 적어둘게요!
 
-## 3. [제철 과일] 감
+```bash
+brew install git
+```
 
-![](../../../images/2023/10/persimmons-1.webp)
+설치 완료 후 [Github](https://github.com/) 계정을 등록해주세요.
 
-세 번째 제철 과일은 감이에요. 추석에는 사과, 배와 같이 차례상에 올라가기도 하고 친숙한 과일이죠. 감은 가을에 수확되고 그냥 깎아먹어도 맛있고, 곶감으로 먹어도 참 맛있는 것 같아요. 그런 감도 이런 효능이 있답니다!
+```bash
+git config --global user.name &quot;your github name&quot;
+git config --global user.email &quot;your github email&quot;
+```
 
-1. 함류된 비타민C가 무려 사과의 10배에 달해서 피부 영양 공급, 활성산소 제거에 따봉이에요.
-2. 스코플레틴 성분이 다량 함유돼 고혈압이나 동맥경화 등 심혈관질환 예방에 따봉이에요.
-3. 비타민A가 풍부해 안구 건조증, 백내장 예방 등 눈 건강에도 따봉이에요.
-4. 떫은 맛을 내는 &apos;탄닌&apos; 성분이 혈액 응고를 도와 지혈과 살균작용에 따봉이에요.
-5. 아세트알데하이드의 분해를 촉진시켜 숙취 해소에 따봉이에요.
-6. 체내의 신진대사를 촉진해 환절기 면역력 강화에 따봉이에요.
+### 1-2-1. Windows Node.js 설치하기
 
-## 4. [제철 과일] 석류
+Windows에서는 설치가 매우 간단해요.
 
-![](../../../images/2023/10/pomegranates-1.webp)
+[공식 사이트](https://nodejs.org/en)를 방문해서 LTS가 붙은 버튼을 클릭해주세요.
 
-네 번째 제철 과일은 석류에요. 개인적으로는 석류는 먹기가 너무 불편하고 씨가 많이 나와서 선호하지 않는 편이에요. 그래도 맛은 정말 좋아서 주변 사람들은 모두 좋아하는 과일이 아닌가 싶어요. 그런 석류는 과연 어떤 장점들이 있을까요?
+그 후 다운받은 .exe 파일을 실행시켜주세요.
 
-1. 항암 효과가 있어요. 특히, 남성 전립선암에 따봉이에요.
-2. 집중력과 활력을 높여주고 불안과 만성피로에 따봉이에요.
-3. 뇌 손상과 같은 신경장애 완화에 따봉이에요.
-4. 칼륨이 풍부해서 이뇨 작용을 도와 독소 배출과 다이어트에 따봉이에요!
-5. 폴리페놀이라는 항산화 물질이 풍부하게 함유해서 면역 강화에 따봉이에요!
-6. 간의 독소 제거 및 혈류 개선에 따봉이에요!
-7. 콜레스테롤 수치 저하와 고혈압 예방에 따봉이에요!
+설치 중 이 화면이 나오면 체크박스를 클릭 후 진행해주세요!
 
-## 5. [제철 과일] 무화과
+![node.js chocolatey](../../../images/2023/09/gatsby-mdx-blog-1-1.jpeg)
 
-![](../../../images/2023/10/fig-1.webp)
+### 1-2-2. Windows Git 설치하기
 
-다섯 번째 제철 과일은 무화과에요. 무화과는 자른 상태로 바로 먹어본 적은 거의 없는 것 같고, 디저트에 들어갔을 때 몇 번 먹어봤는데 달달하고 맛있더라고요! 이 포스팅 쓰면서 저도 구매해보려고요. 그런 무화과도 이렇게나 많은 효능이 있어요.
+Git도 Windows에서는 설치가 매우 간단해요.
 
-1. 칼로리가 다소 있는 편이어서 공복감 해결에 따봉이에요.
-2. 섬유질이 풍부해 변비 완화와 소화기 계통 건강에 따봉이에요.
-3. 혈중 중성지방을 낮춰서 심혈관계 질환 예방에 따봉이에요.
-4. 펙틴이라는 수용성 섬유질과 세로토닌을 생성하는 비타민B6를 함유해 콜레스테롤을 낮춰줘요.
-5. 철분 함량이 많아 빈혈에 따봉이에요.
-6. 비타민K, 칼슘, 칼륨, 마그네슘 등을 많이 함유해 골다공증에 따봉이에요.
-7. 아연, 마그네슘, 칼슘, 칼륨 등이 풍부해 산화질소 생성 증가 및 불임, 발기부전 등의 성기능 장애에 따봉이에요.
-8. 오메가3와 마그네슘, 멜라토닌 생성에 도움을 주는 트립토판이 들어있어 불면증 방지에 따봉이에요.
+[공식 사이트](https://gitforwindows.org/)를 방문 후 Download 버튼을 클릭해서 설치시고 .exe 파일을 실행해주세요.
 
-## 6. [제철 과일] 모과
+### 1-3. gatsby-cli 설치 (macOS, Windows 공통)
 
-![](../../../images/2023/10/quinces-1.webp)
+이제 gatsby command-line-interface를 설치해요.
 
-마지막 제철 과일은 모과에요. 모과는 항상 방향제 대신으로만 사용해왔는데 실제로 먹는 분들은 향이 좋은 만큼 차로 우려서 많이 드시더라고요. 얼마나 효능이 좋은지 한 번 볼까요??
+```bash
+npm install -g gatsby-cli
+```
 
-1. 비타민, 구연산, 사과산, 플라보노이드 등이 풍부해 감기 예방과 만성 기침에 따봉이에요.
-2. 몸살이나 근육통, 단백성 관절염 부종억제, 연골 조직을 부드럽게 하는 데 따봉이에요.
-3. 비타민, 사포닌, 탄닌 등이 풍부해 호흡기 질환 예방과 목 염증 완화에 따봉이에요.
-4. 임신 초기 입덧의 원인인 위장 장애 증상 완화에 따봉이에요.
+설치가 완료되면 잘 설치됐나 확인해요.
+
+```bash
+gatsby --version
+# Gatsby CLI version: 5.12.4
+# Gatsby version: 5.12.9
+```
+
+## 2. Gatsby 프로젝트 생성하기
+
+이제 드디어 Gatsby 프로젝트를 생성해볼거에요!
+
+이미 틀이 잡혀있는 템플릿을 사용해서 바로 만들어도 되지만 오늘은 배워보는 것이니 만큼 초기 상태로 프로젝트를 생성해보도록 해요!
+
+```bash
+# 프로젝트 생성을 원하는 폴더로 이동 후 진행해주세요.
+
+gatsby new
+```
+
+원하시는 블로그 이름을 입력해주세요.
+
+```bash
+What would you like to call your site?
+✔ · Flash의 블로그
+```
+
+원하시는 프로젝트명을 설정해주세요.
+
+```bash
+What would you like to name the folder where your site will be created?
+✔ {현재 폴더명}/ flash
+```
+
+js와 ts 중에 선택해주세요.
+
+저는 당연히 ts를 선택했는데 앞으로 이 글을 계속 따라오실 분들은 ts를 선택해주시고 아니신 분들은 원하시는 언어를 선택해주세요.
+
+앞으로는 ts가 오픈 소스들이나 공동 작업 프로젝트 혹은 회사 등 여러 곳에서 많이 정착될 것으로 예상되니 사용하시는 걸 권장드려요!
+
+```bash
+Will you be using JavaScript or TypeScript?
+  JavaScript
+❯ TypeScript
+```
+
+Content Management System을 선택하는 부분인데 이 포스팅의 마지막은 Github에 배포하는 게 목표이기 때문에  No (or I&apos;ll add it later)를 선택할게요.
+
+물론, 추후에 원하는 CMS를 선택할 수 있어요.
+
+```bash
+? Will you be using a CMS?
+(Single choice) Arrow keys to move, enter to confirm
+❯ No (or I&apos;ll add it later)
+  –
+  Contentful
+  DatoCMS
+  Netlify CMS
+  Sanity
+  Shopify
+  WordPress
+```
+
+원하시는 스타일링 시스템을 선택하시면 gatsby 플러그인 설정을 자동으로 해줘서 편한 기능이에요.
+
+저는 styled-components를 선택했어요. 
+
+이건 원하시는 걸 선택해주세요.
+
+```bash
+? Would you like to install a styling system?
+(Single choice) Arrow keys to move, enter to confirm
+  No (or I&apos;ll add it later)
+  –
+  Emotion
+  PostCSS
+  Sass
+❯ styled-components
+  Theme UI
+  vanilla-extract
+  Tailwind CSS
+```
+
+이번에는 프로젝트 생성에 맞춰 추가되길 원하는 기능들을 선택해주세요.
+
+저는 아래의 네 가지를 선택했어요. 이 블로그 글들을 쭉 따라가실 거라면 제가 선택한 걸 동일하게 선택하는 걸 추천드려요.
+
+다 따라하지 않으시더라도 이 중 Add Markdown and MDX support는 반드시 선택해주세요!
+
+물론 여기서 선택하지 않으셔도 추후에 플러그인을 수동으로 설정하실 수 있으니 걱정마세요!
+
+```bash
+? Would you like to install additional features with other plugins?
+(Multiple choice) Use arrow keys to move, spacebar to select, and confirm with an enter on &quot;Done&quot;
+ ◯ Add the Google gtag script for e.g. Google Analytics
+ ◉ Add responsive images
+ ◉ Add an automatic sitemap
+ ◉ Generate a manifest file
+❯◉ Add Markdown and MDX support
+ ◯ Add Markdown support (without MDX)
+  ─────
+  Done
+```
+
+마지막으로 지금까지 설정한 것들을 확인하는 절차에요.
+
+실수하신 게 없으시다면 확인하신 후 Yes를 입력해주세요.
+
+```bash
+Thanks! Here&apos;s what we&apos;ll now do:
+
+    🛠  Create a new Gatsby site in the folder flash
+    🎨 Get you set up to use styled-components for styling your site
+    🔌 Install gatsby-plugin-image, gatsby-plugin-sitemap,
+gatsby-plugin-manifest, gatsby-plugin-mdx
+
+
+? Shall we do this? (Y/n) › Yes
+```
+
+## 3. Gastby 프로젝트 실행
+
+설치가 완료되면 아래의 명령어들을 입력해주세요.
+
+```bash
+cd {your project name}
+
+yarn develop
+```
+
+[http://localhost:8000](http://localhost:8000) 주소를 브라우저로 입력했을 때 아래와 같은 화면이 나오면 성공이에요!
+
+![gatsby new project](../../../images/2023/09/gatsby-mdx-blog-1-2.png)
 
 ---
 
 ## 정리하며
 
-오늘은 가을의 제철 과일 종류와 각각의 효능에 대해 알아봤어요. 이렇게만 적어도 글이 너무 길어져서 보관 방법 등에 대해서는 적지 못했는데 다음에 기회가 된다면 각 과일들의 보관 방법들에 대해서도 적어보도록 할게요.
+오늘은 Gatsby 블로그 설치 환경과 초기 프로젝트를 생성하고 실행하는 법에 대해 알아봤어요.
 
-###### 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</content:encoded></item><item><title><![CDATA[[react-native] react-navigation으로 화면 전환 시작하기]]></title><description><![CDATA[오늘은 react-navigation 오픈 소스를 사용하여 react-native에서의 화면 전환에 대해 알아보도록 해요. 우선 공식문서를 켜놓으시면 더 편하게 따라오실 수 있어요. 블로그 글도 간단하게 한글로 정리되서 좋지만 항상 공식문서를 읽는…]]></description><link>https://flaassh.github.io/posts/2023/09/react-native-react-navigation-1/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/react-native-react-navigation-1/</guid><pubDate>Mon, 04 Sep 2023 13:13:42 GMT</pubDate><content:encoded>
+앞으로는 mdx 기반으로 블로그 글 쓰는 법과 쓴 글들을 화면에 구성하는 법에 대해 배워볼게요!</content:encoded></item><item><title><![CDATA[[react-native] react-navigation으로 화면 전환 시작하기]]></title><description><![CDATA[오늘은 react-navigation 오픈 소스를 사용하여 react-native에서의 화면 전환에 대해 알아보도록 해요. 우선 공식문서를 켜놓으시면 더 편하게 따라오실 수 있어요. 블로그 글도 간단하게 한글로 정리되서 좋지만 항상 공식문서를 읽는…]]></description><link>https://flaassh.github.io/posts/2023/09/react-native-react-navigation-1/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/react-native-react-navigation-1/</guid><pubDate>Mon, 04 Sep 2023 13:13:42 GMT</pubDate><content:encoded>
 import img1 from &apos;../../../images/2023/09/navigation-1-0.webp&apos;;
 import img2 from &apos;../../../images/2023/09/navigation-1-1.webp&apos;;
 
 오늘은 react-navigation 오픈 소스를 사용하여 react-native에서의 화면 전환에 대해 알아보도록 해요.
 
 우선 [공식문서](https://reactnavigation.org/docs/getting-started/)를 켜놓으시면 더 편하게 따라오실 수 있어요. 블로그 글도 간단하게 한글로 정리되서 좋지만 항상 공식문서를 읽는 습관을 들이는게 좋아요.
+
+---
 
 ## 1. 프로젝트 만들기
 
@@ -413,6 +515,8 @@ yarn ios
 yarn android
 ```
 
+---
+
 ## 정리하며
 
 오늘은 react-navigation을 이용하여 화면을 전환하는 방법을 간단한 코드를 작성해서 알아봤어요.
@@ -420,6 +524,7 @@ yarn android
 다음 포스팅에서는 react-navigation의 navigate, push, replace 등의 화면 전환 함수들을 어떤 상황에
 어떻게 사용해야 하는지에 대해 알아보도록 해요.</content:encoded></item><item><title><![CDATA[[gatsby] mdx 코드에 prism-react-renderer 적용하기]]></title><link>https://flaassh.github.io/posts/2023/09/gatsby-prismjs-react-renderer/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/gatsby-prismjs-react-renderer/</guid><pubDate>Mon, 04 Sep 2023 13:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[[mac] iTerm2 설치]]></title><link>https://flaassh.github.io/posts/2023/09/install-iterm/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/install-iterm/</guid><pubDate>Mon, 04 Sep 2023 13:00:00 GMT</pubDate><content:encoded>
 </content:encoded></item><item><title><![CDATA[[react-native] mac m1 환경 설정 및 설치 방법]]></title><link>https://flaassh.github.io/posts/2023/09/react-native-setting-1/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/react-native-setting-1/</guid><pubDate>Sat, 02 Sep 2023 13:00:00 GMT</pubDate><content:encoded>
+</content:encoded></item><item><title><![CDATA[[react-native] ㅑ내 ㄴ]]></title><link>https://flaassh.github.io/posts/2023/09/react-native-unable-to-boot-device/</link><guid isPermaLink="false">https://flaassh.github.io/posts/2023/09/react-native-unable-to-boot-device/</guid><pubDate>Sat, 02 Sep 2023 13:00:00 GMT</pubDate><content:encoded>
 </content:encoded></item><item><title><![CDATA[[macOS] m1 homebrew 설치하기]]></title><description><![CDATA[인텔 맥과 다르게 m1 이상의 맥은 homebrew 설치 과정이 조금 추가되는데요. 오늘은 m1 맥에서 homebrew를 설치하는 방법에 대해 알아보도록 해요.
 
 1. homebrew 설치
@@ -430,6 +535,8 @@ yarn android
 인텔 맥과 다르게 m1 이상의 맥은 homebrew 설치 과정이 조금 추가되는데요.
 
 오늘은 m1 맥에서 homebrew를 설치하는 방법에 대해 알아보도록 해요.
+
+---
 
 ## 1. homebrew 설치
 
@@ -446,7 +553,9 @@ brew --version
 # zsh: command not found: brew
 ```
 
-설치가 완료되고 확인을 위해 brew --version 명령어를 입력하면 아래와 같이 zsh: command not found: brew 라는 문구가 떠요.
+인텔 mac의 경우 설치가 완료된 것이니 여기서 버전이 나오고 brew 명령어를 이용해서 사용하세요!
+
+m1 mac의 경우 설치가 완료되고 확인을 위해 brew --version 명령어를 입력하면 아래와 같이 zsh: command not found: brew 라는 문구가 떠요.
 
 이 문구가 뜨는 이유는 간단해요. homebrew의 실행 파일의 위치를 path에 설정해두지 않아서 그런 거에요.
 
