@@ -17,16 +17,6 @@ data-styled.g4[id="CommonHeader__InnerContainer-sc-41bxr4-1"]{content:"elMJYg,"}
 data-styled.g5[id="CommonHeader__Label-sc-41bxr4-2"]{content:"kXaQLw,"}/*!sc*/
 .hMkJNn{max-width:860px;width:100%;margin:auto;}/*!sc*/
 data-styled.g6[id="Utterances__Container-sc-tb0xzf-0"]{content:"hMkJNn,"}/*!sc*/
-.bfWRvT{text-align:left;overflow-x:scroll;padding:1em;}/*!sc*/
-data-styled.g7[id="CodeBlock__Pre-sc-ud0quc-0"]{content:"bfWRvT,"}/*!sc*/
-.hDiJBL{display:flex;padding:2px 0;}/*!sc*/
-.hDiJBL:hover{background-color:rgba(255,255,255,0.1);}/*!sc*/
-.hDiJBL:hover .no{color:#F8F9FA;}/*!sc*/
-data-styled.g8[id="CodeBlock__Line-sc-ud0quc-1"]{content:"hDiJBL,"}/*!sc*/
-.dXKOXb{text-align:right;padding-right:1em;user-select:none;opacity:0.5;color:gray;}/*!sc*/
-data-styled.g9[id="CodeBlock__LineNo-sc-ud0quc-2"]{content:"dXKOXb,"}/*!sc*/
-.dfxQIp{display:table-cell;}/*!sc*/
-data-styled.g10[id="CodeBlock__LineContent-sc-ud0quc-3"]{content:"dfxQIp,"}/*!sc*/
 .fQPgta{width:100%;}/*!sc*/
 data-styled.g11[id="mdxfields__slug__BodyContainer-sc-13a3pz0-0"]{content:"fQPgta,"}/*!sc*/
 .bCedPM{width:100%;max-width:860px;margin:auto;padding-top:78px;margin-bottom:40px;}/*!sc*/
@@ -125,7 +115,7 @@ data-styled.g17[id="mdxfields__slug__FooterContainer-sc-13a3pz0-6"]{content:"fuI
   ></span>
   <img
         class="gatsby-resp-image-image"
-        alt="boot 0"
+        alt="ios simulator Unable to boot device in current state: Booted"
         title=""
         src="/static/d11db51c6197afc62acb4312f1aeecd9/c2b64/boot-0.webp"
         srcset="/static/d11db51c6197afc62acb4312f1aeecd9/4bbe2/boot-0.webp 215w,
@@ -138,38 +128,41 @@ data-styled.g17[id="mdxfields__slug__FooterContainer-sc-13a3pz0-6"]{content:"fuI
       />
   </a>
     </span></span>
-<p>오늘은 react-native 0.7 버전 이후에 ios 시뮬레이터를 실행시키면 발생하는 unable to boot device in current state: Booted 오류를 해결하는 방법에 대해 알아봐요.</p>
-<p>오류가 나는 이유부터 알아보자면 시뮬레이터를 실행시키기 위해 터미널을 실행시켜야 하는데 해당 권한이 존재하지 않아서 발생하는 문제에요.</p>
+<p>오늘은 react-native에서 ios simulator를 실행시킬 때 종종 발생하는 unable to boot device in current state: Booted 오류를 해결하는 방법에 대해 알아봐요.</p>
+<p>오류가 나는 이유부터 알아보자면 시뮬레이터가 실행 상태</p>
 <p>그럼 이제 해결 방법에 대해 알아볼까요?</p>
 <hr/>
 <div class="h2-div"><h2 id="1-해결-방법" style="position:relative"><a href="#1-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95" aria-label="1 해결 방법 permalink" class="anchor before"><span><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a>1. 해결 방법</h2></div>
-<h3 id="1-1-프로젝트-폴더-node_modules-열기" style="position:relative"><a href="#1-1-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%8F%B4%EB%8D%94-node_modules-%EC%97%B4%EA%B8%B0" aria-label="1 1 프로젝트 폴더 node_modules 열기 permalink" class="anchor before"><span><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a>1-1. 프로젝트 폴더 node_modules 열기</h3>
-<p>현재 프로젝트의 폴더를 열어서 node_modules 폴더를 열어주세요.</p>
+<h3 id="1-1-ios-simulator-settings-켜기" style="position:relative"><a href="#1-1-ios-simulator-settings-%EC%BC%9C%EA%B8%B0" aria-label="1 1 ios simulator settings 켜기 permalink" class="anchor before"><span><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a>1-1. ios simulator settings 켜기</h3>
+<p>ios 시뮬레이터를 켠 상태에서 아래의 이미지와 같이 좌측 상단의 메뉴바에서 Simulator -&gt; Settings... 를 클릭해주세요.</p>
+<p>혹은 시뮬레이터를 켠 상태에서 (⌘ + ,)를 함께 눌러주세요.</p>
+<img src="/static/boot-1-1a7492d4628ff856d2f0e263273a5463.webp" style="width:250px;margin:auto;display:block;margin-bottom:20px" alt="ios simulator settings"/>
+<h3 id="1-2-simulator-lifetime-변경" style="position:relative"><a href="#1-2-simulator-lifetime-%EB%B3%80%EA%B2%BD" aria-label="1 2 simulator lifetime 변경 permalink" class="anchor before"><span><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a>1-2. Simulator lifetime 변경</h3>
+<p>아래의 이미지와 같이 Simulator lifetime 부분의 &quot;When Simulator starts boot the most recently used simulator&quot;를 체크 해제해주세요.</p>
 <span><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 860px; "
     >
       <a
     class="gatsby-resp-image-link"
-    href="/static/9ba5d1c5c7075b37ea268fc84347bc0c/8aa17/boot-1.webp"
+    href="/static/d9dd05d3715a62bee68ee7e5f4e754cb/b2d4b/boot-2.webp"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
     <span
     class="gatsby-resp-image-background-image"
-    style="padding-bottom: 50.697674418604656%; position: relative; bottom: 0; left: 0; background-image: url('data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAAAQBACdASoUAAoAPtFUo0uoJKMhsAgBABoJZQCw7Yuayj2O58/d+/lQAAD+5QOj8+7Abdb582xE3iVFvYEs19ntpNoCLdcXPnh/1kP50ECsOwGPMP3ykftWSxUhxnL2Tq2APlup/z8a0Ame9jYDPtEaAGLLAU2Uwtv75+ZGDS27k+IBErj++WZjOr5Cu9m4YAA='); background-size: cover; display: block;"
+    style="padding-bottom: 81.3953488372093%; position: relative; bottom: 0; left: 0; background-image: url('data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACQAwCdASoUABAAPtFUo0uoJKMhsAgBABoJZwAAXE7Q+yf0GIAAAP7pE7+woyy/N/io1S40kCD6jS0EJhypjTB8JtGgAAAA'); background-size: cover; display: block;"
   ></span>
   <img
         class="gatsby-resp-image-image"
-        alt="boot 1"
+        alt="ios simulator lifetime &quot;When Simulator starts boot the most recently used simulator&quot;"
         title=""
-        src="/static/9ba5d1c5c7075b37ea268fc84347bc0c/31b17/boot-1.webp"
-        srcset="/static/9ba5d1c5c7075b37ea268fc84347bc0c/4bbe2/boot-1.webp 215w,
-/static/9ba5d1c5c7075b37ea268fc84347bc0c/866c5/boot-1.webp 430w,
-/static/9ba5d1c5c7075b37ea268fc84347bc0c/31b17/boot-1.webp 860w,
-/static/9ba5d1c5c7075b37ea268fc84347bc0c/e027f/boot-1.webp 1290w,
-/static/9ba5d1c5c7075b37ea268fc84347bc0c/8aa17/boot-1.webp 1376w"
+        src="/static/d9dd05d3715a62bee68ee7e5f4e754cb/31b17/boot-2.webp"
+        srcset="/static/d9dd05d3715a62bee68ee7e5f4e754cb/4bbe2/boot-2.webp 215w,
+/static/d9dd05d3715a62bee68ee7e5f4e754cb/866c5/boot-2.webp 430w,
+/static/d9dd05d3715a62bee68ee7e5f4e754cb/31b17/boot-2.webp 860w,
+/static/d9dd05d3715a62bee68ee7e5f4e754cb/b2d4b/boot-2.webp 1152w"
         sizes="(max-width: 860px) 100vw, 860px"
         style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
         loading="lazy"
@@ -177,189 +170,18 @@ data-styled.g17[id="mdxfields__slug__FooterContainer-sc-13a3pz0-6"]{content:"fuI
       />
   </a>
     </span></span>
-<h3 id="1-2-react-native-폴더-열기" style="position:relative"><a href="#1-2-react-native-%ED%8F%B4%EB%8D%94-%EC%97%B4%EA%B8%B0" aria-label="1 2 react native 폴더 열기 permalink" class="anchor before"><span><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a>1-2. react-native 폴더 열기</h3>
-<p>node_modules 폴더 안에서 react-native 폴더를 찾아서 열어주세요.</p>
-<span><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 860px; "
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/static/9914f206f8ff5ca9f4cc479585738e62/7fa3c/boot-2.webp"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 62.7906976744186%; position: relative; bottom: 0; left: 0; background-image: url('data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAACwBACdASoUAA0APtFUo0uoJKMhsAgBABoJYwCdMoGv/jDoM/pwKqKTM3HONg9AAP7PX9yQshMPhVyplP6WZhxDXrGQ8Je9e8HF3Pt2hbY9mr9Dq+LQQ9aIZ91e533Y6ps8LbZc/z/8oux7ZlazKj2/FE60qyvZ4ksGXBAtuEcFmBiL5wiwu31SSBtQEyytXK4XSjUuSrEMD8ib6b93cGWwIjcSbbO6VXyh06f5Y9eNfvb3IUs/4AAA'); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="boot 2"
-        title=""
-        src="/static/9914f206f8ff5ca9f4cc479585738e62/31b17/boot-2.webp"
-        srcset="/static/9914f206f8ff5ca9f4cc479585738e62/4bbe2/boot-2.webp 215w,
-/static/9914f206f8ff5ca9f4cc479585738e62/866c5/boot-2.webp 430w,
-/static/9914f206f8ff5ca9f4cc479585738e62/31b17/boot-2.webp 860w,
-/static/9914f206f8ff5ca9f4cc479585738e62/e027f/boot-2.webp 1290w,
-/static/9914f206f8ff5ca9f4cc479585738e62/7fa3c/boot-2.webp 1336w"
-        sizes="(max-width: 860px) 100vw, 860px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-  </a>
-    </span></span>
-<h3 id="1-3-scripts-폴더-열기" style="position:relative"><a href="#1-3-scripts-%ED%8F%B4%EB%8D%94-%EC%97%B4%EA%B8%B0" aria-label="1 3 scripts 폴더 열기 permalink" class="anchor before"><span><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a>1-3. scripts 폴더 열기</h3>
-<p>./node_modules/react-native 폴더 안에서 scripts 폴더를 찾아서 열어주세요.</p>
-<span><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 860px; "
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/static/f8432eabf3a02c4e0f3ca95d6fb81841/83135/boot-3.webp"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 64.65116279069768%; position: relative; bottom: 0; left: 0; background-image: url('data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAACQBACdASoUAA0APtFUo0uoJKMhsAgBABoJZQDCn8GJ/i1QW+z+93ncD7rlEkgA/tmrrLegSlzazEQ2tXhuccnrldHBEHwHzs02lcTjF+hsT2FLgIPerl6IBifRDl1JTwLCIK7KzAkfXKAzAZW+U2YICe/Geok3KQgBUSWQpP+RjLb9t+J6uNpNMgzFTUN5cvt/DJvjUmbJRAo3PifZBTlFWCeFKOUHRecwggnO3xeIUoQsQpQAAAAA'); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="boot 3"
-        title=""
-        src="/static/f8432eabf3a02c4e0f3ca95d6fb81841/31b17/boot-3.webp"
-        srcset="/static/f8432eabf3a02c4e0f3ca95d6fb81841/4bbe2/boot-3.webp 215w,
-/static/f8432eabf3a02c4e0f3ca95d6fb81841/866c5/boot-3.webp 430w,
-/static/f8432eabf3a02c4e0f3ca95d6fb81841/31b17/boot-3.webp 860w,
-/static/f8432eabf3a02c4e0f3ca95d6fb81841/e027f/boot-3.webp 1290w,
-/static/f8432eabf3a02c4e0f3ca95d6fb81841/83135/boot-3.webp 1306w"
-        sizes="(max-width: 860px) 100vw, 860px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-  </a>
-    </span></span>
-<h3 id="1-4-launchpackagercommand-파일-다른-프로그램으로-열기" style="position:relative"><a href="#1-4-launchpackagercommand-%ED%8C%8C%EC%9D%BC-%EB%8B%A4%EB%A5%B8-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%EC%9C%BC%EB%A1%9C-%EC%97%B4%EA%B8%B0" aria-label="1 4 launchpackagercommand 파일 다른 프로그램으로 열기 permalink" class="anchor before"><span><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a>1-4. launchPackager.command 파일 다른 프로그램으로 열기</h3>
-<p>./node_modules/react-native/scripts 폴더 안에서 launchPackager.command 파일을 우클릭해서 아래 이미지와 같이 다른 파일로 열기를 클릭해요.</p>
-<span><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 860px; "
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/static/4e57cc4c6961b030c3860e191c62327e/79349/boot-4.webp"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 58.6046511627907%; position: relative; bottom: 0; left: 0; background-image: url('data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAwCdASoUAAwAPtFUo0uoJKMhsAgBABoJZQAAW/GdfY7Z1V62vjl4AP7c2jWFIXEyQhA5HWOAGf5MpGUfVSiYgmSEmfjnesxvjbRHkhHLIKxFo8SyhiO3Mdh7jj9BXmsfPwAA'); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="boot 4"
-        title=""
-        src="/static/4e57cc4c6961b030c3860e191c62327e/31b17/boot-4.webp"
-        srcset="/static/4e57cc4c6961b030c3860e191c62327e/4bbe2/boot-4.webp 215w,
-/static/4e57cc4c6961b030c3860e191c62327e/866c5/boot-4.webp 430w,
-/static/4e57cc4c6961b030c3860e191c62327e/31b17/boot-4.webp 860w,
-/static/4e57cc4c6961b030c3860e191c62327e/e027f/boot-4.webp 1290w,
-/static/4e57cc4c6961b030c3860e191c62327e/9d85b/boot-4.webp 1720w,
-/static/4e57cc4c6961b030c3860e191c62327e/79349/boot-4.webp 2264w"
-        sizes="(max-width: 860px) 100vw, 860px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-  </a>
-    </span></span>
-<h3 id="1-5-itermapp으로-앱-열기" style="position:relative"><a href="#1-5-itermapp%EC%9C%BC%EB%A1%9C-%EC%95%B1-%EC%97%B4%EA%B8%B0" aria-label="1 5 itermapp으로 앱 열기 permalink" class="anchor before"><span><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a>1-5. iTerm.app으로 앱 열기</h3>
-<p>아래 이미지처럼 iTerm.app으로 앱을 설정하고 Always Open With 체크 박스를 클릭한 후 열기를 클릭해요.</p>
-<span><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 860px; "
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/static/6b8aff7ecd450c97b00e50ca7a1f8b4a/d90b2/boot-5.webp"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 55.81395348837209%; position: relative; bottom: 0; left: 0; background-image: url('data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAwCdASoUAAsAPtFUpEuoJKOhsAgBABoJYwAAXAY7W7nIUvz0qE4AAP7jVhCgw5jlQCuDr4j20xpqZviaML2UTPRC2EGWSGmSK/x0g/AKhp3xDuiSAHyBvxRsTW4Q8dSTdxHmoPliuMH0AAA='); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="boot 5"
-        title=""
-        src="/static/6b8aff7ecd450c97b00e50ca7a1f8b4a/31b17/boot-5.webp"
-        srcset="/static/6b8aff7ecd450c97b00e50ca7a1f8b4a/4bbe2/boot-5.webp 215w,
-/static/6b8aff7ecd450c97b00e50ca7a1f8b4a/866c5/boot-5.webp 430w,
-/static/6b8aff7ecd450c97b00e50ca7a1f8b4a/31b17/boot-5.webp 860w,
-/static/6b8aff7ecd450c97b00e50ca7a1f8b4a/e027f/boot-5.webp 1290w,
-/static/6b8aff7ecd450c97b00e50ca7a1f8b4a/d90b2/boot-5.webp 1590w"
-        sizes="(max-width: 860px) 100vw, 860px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-  </a>
-    </span></span>
-<h3 id="1-6-iterm-앱-확인" style="position:relative"><a href="#1-6-iterm-%EC%95%B1-%ED%99%95%EC%9D%B8" aria-label="1 6 iterm 앱 확인 permalink" class="anchor before"><span><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a>1-6. iTerm 앱 확인</h3>
-<p>위에서 열기를 클릭하면 아래와 같이 iTerm이 실행되는 걸 확인하고 창을 꺼주세요.</p>
-<span><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 860px; "
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/static/587169d3e0a9f2b91a7966b43aab06f2/e3770/boot-6.webp"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 67.44186046511628%; position: relative; bottom: 0; left: 0; background-image: url('data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAABwAwCdASoUAA0APtFUo0uoJKMhsAgBABoJZQC7ABuliBFSs0AA/uvndZqUENg0dxEI5K6qegyGv1fhpSt876zGe1QAAA=='); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="boot 6"
-        title=""
-        src="/static/587169d3e0a9f2b91a7966b43aab06f2/31b17/boot-6.webp"
-        srcset="/static/587169d3e0a9f2b91a7966b43aab06f2/4bbe2/boot-6.webp 215w,
-/static/587169d3e0a9f2b91a7966b43aab06f2/866c5/boot-6.webp 430w,
-/static/587169d3e0a9f2b91a7966b43aab06f2/31b17/boot-6.webp 860w,
-/static/587169d3e0a9f2b91a7966b43aab06f2/e027f/boot-6.webp 1290w,
-/static/587169d3e0a9f2b91a7966b43aab06f2/e3770/boot-6.webp 1292w"
-        sizes="(max-width: 860px) 100vw, 860px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-  </a>
-    </span></span>
-<h3 id="1-7-다시-앱-실행" style="position:relative"><a href="#1-7-%EB%8B%A4%EC%8B%9C-%EC%95%B1-%EC%8B%A4%ED%96%89" aria-label="1 7 다시 앱 실행 permalink" class="anchor before"><span><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a>1-7. 다시 앱 실행</h3>
-<p>원하시는 방식으로 앱을 실행시켜 주세요.</p>
-<pre><div class="CodeBlock__Pre-sc-ud0quc-0 bfWRvT prism-code language-bash" style="color:#9CDCFE;background-color:#1E1E1E"><div class="CodeBlock__Line-sc-ud0quc-1 hDiJBL token-line" style="color:#9CDCFE"><span class="CodeBlock__LineNo-sc-ud0quc-2 dXKOXb no">1</span><span class="CodeBlock__LineContent-sc-ud0quc-3 dfxQIp"><span class="token function" style="color:rgb(220, 220, 170)">npm</span><span class="token plain"> run ios</span></span></div><div class="CodeBlock__Line-sc-ud0quc-1 hDiJBL token-line" style="color:#9CDCFE"><span class="CodeBlock__LineNo-sc-ud0quc-2 dXKOXb no">2</span><span class="CodeBlock__LineContent-sc-ud0quc-3 dfxQIp"><span class="token plain" style="display:inline-block">
-</span></span></div><div class="CodeBlock__Line-sc-ud0quc-1 hDiJBL token-line" style="color:#9CDCFE"><span class="CodeBlock__LineNo-sc-ud0quc-2 dXKOXb no">3</span><span class="CodeBlock__LineContent-sc-ud0quc-3 dfxQIp"><span class="token plain"></span><span class="token comment" style="color:rgb(106, 153, 85)"># or </span><span class="token plain"></span></span></div><div class="CodeBlock__Line-sc-ud0quc-1 hDiJBL token-line" style="color:#9CDCFE"><span class="CodeBlock__LineNo-sc-ud0quc-2 dXKOXb no">4</span><span class="CodeBlock__LineContent-sc-ud0quc-3 dfxQIp"><span class="token plain"></span><span class="token comment" style="color:rgb(106, 153, 85)"># yarn ios</span></span></div></div></pre>
-<img src="/static/boot-7-8a1ff8b4c6772854c39c66614de85ff4.webp" style="width:250px;margin:auto;display:block;margin-bottom:20px"/>
+<hr/>
+<div class="h2-div"><h2 id="참고" style="position:relative"><a href="#%EC%B0%B8%EA%B3%A0" aria-label="참고 permalink" class="anchor before"><span><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a>참고</h2></div>
+<ul>
+<li><a href="https://stackoverflow.com/questions/24135067/unable-to-boot-device-in-current-state-booted/71249396#71249396">stack overflow</a></li>
+</ul>
 <hr/>
 <div class="h2-div"><h2 id="정리하며" style="position:relative"><a href="#%EC%A0%95%EB%A6%AC%ED%95%98%EB%A9%B0" aria-label="정리하며 permalink" class="anchor before"><span><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></span></a>정리하며</h2></div>
-<p>오늘은 react-native 0.7 버전 이후에 ios 시뮬레이터를 실행시키면 발생하는 unable to boot device in current state: Booted 오류를 해결하는 방법에 대해 알아봤어요.</p>
+<p>오늘은 react-native에서 ios simulator를 실행시킬 때 종종 발생하는 unable to boot device in current state: Booted 오류를 해결하는 방법에 대해 알아봤어요.</p>
 <p>이미지와 함께 보면서 따라오면 큰 어려움 없이 해결하실 수 있으니 차근차근 따라해서 해결하셨으면 좋겠어요.</p></div></div></div><div class="mdxfields__slug__FooterContainer-sc-13a3pz0-6 fuIUBZ"><div class="Utterances__Container-sc-tb0xzf-0 hMkJNn"></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/posts/2023/09/react-native-unable-to-boot-device/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
           <script
             id="gatsby-chunk-mapping"
           >
-            window.___chunkMapping="{\"app\":[\"/app-dceb72c5a452b1a3eadf.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-349da16e17e782bc9e4d.js\"],\"component---src-pages-index-tsx\":[\"/component---src-pages-index-tsx-59e26478ac1e8357a466.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-gatsby-mdx-blog-1-mdx\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-gatsby-mdx-blog-1-mdx-5e60a3c225f75fb59202.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-install-homebrew-mdx\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-install-homebrew-mdx-22028ac5b1e3a29a248d.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-install-iterm-mdx\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-install-iterm-mdx-509cc6c77d4c494cda35.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-react-native-react-navigation-1-mdx\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-react-native-react-navigation-1-mdx-2d058846b8db622a1d1f.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-react-native-unable-to-boot-device-mdx\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-react-native-unable-to-boot-device-mdx-8dda4ac7dcb8df57c80f.js\"]}";
+            window.___chunkMapping="{\"app\":[\"/app-96c722927c041217e943.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-349da16e17e782bc9e4d.js\"],\"component---src-pages-index-tsx\":[\"/component---src-pages-index-tsx-62f96a0606fec8ed8373.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-gatsby-mdx-blog-1-mdx\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-gatsby-mdx-blog-1-mdx-7d48a7db53afd3d23141.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-install-homebrew-mdx\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-install-homebrew-mdx-22028ac5b1e3a29a248d.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-install-iterm-mdx\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-install-iterm-mdx-149b78d5a901f5919aef.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-react-native-launch-packager-command-cant-be-opened-mdx\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-react-native-launch-packager-command-cant-be-opened-mdx-87fa333bbc4644136805.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-react-native-react-navigation-1-mdx\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-react-native-react-navigation-1-mdx-3dbd3b09aea95223f3d4.js\"],\"component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-react-native-unable-to-boot-device-mdx\":[\"/component---src-pages-mdx-fields-slug-tsx-content-file-path-contents-posts-2023-09-react-native-unable-to-boot-device-mdx-d4a81ca8b3e13be4b279.js\"]}";
           </script>
-        <script>window.___webpackCompilationHash="574cd3b067d95dfb81bf";</script><script src="/webpack-runtime-225251415be4339b3c7a.js" async></script><script src="/framework-5a49a47864e123a8e1c0.js" async></script><script src="/app-dceb72c5a452b1a3eadf.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
+        <script>window.___webpackCompilationHash="23a36040152987324bbc";</script><script src="/webpack-runtime-73872bb0d12041acd389.js" async></script><script src="/framework-5a49a47864e123a8e1c0.js" async></script><script src="/app-96c722927c041217e943.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
