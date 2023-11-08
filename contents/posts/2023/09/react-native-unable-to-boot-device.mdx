@@ -8,7 +8,7 @@ description: "오늘은 react-native에서 ios simulator를 실행시킬 때 종
 
 import img1 from '../../../images/2023/09/boot-1.webp';
 
-![](../../../images/2023/09/boot-0.webp)
+![ios simulator Unable to boot device in current state: Booted](../../../images/2023/09/boot-0.webp)
 
 오늘은 react-native에서 ios simulator를 실행시킬 때 종종 발생하는 unable to boot device in current state: Booted 오류를 해결하는 방법에 대해 알아봐요.
 
@@ -26,13 +26,13 @@ ios 시뮬레이터를 켠 상태에서 아래의 이미지와 같이 좌측 상
 
 혹은 시뮬레이터를 켠 상태에서 (⌘ + ,)를 함께 눌러주세요.
 
-<img src={img1} style={{width: 250, margin: "auto", display: "block", marginBottom: 20}} />
+<img src={img1} style={{width: 250, margin: "auto", display: "block", marginBottom: 20}} alt="ios simulator settings" />
 
 ### 1-2. Simulator lifetime 변경
 
 아래의 이미지와 같이 Simulator lifetime 부분의 \"When Simulator starts boot the most recently used simulator\"를 체크 해제해주세요.
 
-![](../../../images/2023/09/boot-2.webp)
+![ios simulator lifetime \"When Simulator starts boot the most recently used simulator\"](../../../images/2023/09/boot-2.webp)
 
 ---
 
