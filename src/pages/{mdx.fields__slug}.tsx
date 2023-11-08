@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { PageProps, graphql } from "gatsby";
+import { HeadProps, PageProps, graphql } from "gatsby";
 import { MDXProvider } from "@mdx-js/react";
 import { MDXComponents } from "@mdx-js/react/lib";
 import CommonPageContainer from "../components/common/CommonPageContainer";
@@ -9,6 +9,8 @@ import palette from "../libs/styles/palette";
 import media from "../libs/styles/media";
 import Utterances from "../components/common/Utterances";
 import CodeBlock from "../components/common/CodeBlock";
+import SEO from "../components/common/SEO";
+import dateFormatter from "../libs/formatter";
 
 const BodyContainer = styled.div`
 	width: 100%;
@@ -43,6 +45,14 @@ const TitleLabel = styled.h1`
 	font-weight: 400;
 	color: ${palette.viloet[6]};
 	margin-bottom: 10px;
+`;
+
+const DateContainer = styled.div`
+	margin-bottom: 12px;
+	p {
+		color: ${palette.gray[6]};
+		font-size: 0.8em;
+	}
 `;
 
 const MdxContainer = styled.div`
@@ -158,6 +168,12 @@ export default function PostTemplate({ data, children }: PageProps<any>) {
 						<CategoryLabel>{data.mdx.frontmatter.category}</CategoryLabel>
 					)}
 					<TitleLabel>{data.mdx.frontmatter.title}</TitleLabel>
+					<DateContainer>
+						<p>게시: {dateFormatter(data.mdx.frontmatter.created_at)}</p>
+						{data.mdx.frontmatter.updated_at && (
+							<p>수정: {dateFormatter(data.mdx.frontmatter.updated_at)}</p>
+						)}
+					</DateContainer>
 					<MdxContainer>
 						<MDXProvider components={components}>{children}</MDXProvider>
 					</MdxContainer>
@@ -173,10 +189,32 @@ export default function PostTemplate({ data, children }: PageProps<any>) {
 export const pageQuery = graphql`
 	query Mdx($fields__slug: String!) {
 		mdx(fields: { slug: { eq: $fields__slug } }) {
+			fields {
+				slug
+			}
 			frontmatter {
 				title
-				created_at(formatString: "YYYY-MM-DD HH:mm")
+				created_at
+				updated_at
+				thumbnail {
+					childImageSharp {
+						fixed {
+							src
+						}
+					}
+				}
 			}
 		}
 	}
 `;
+
+export const Head = ({ data }: HeadProps<any>) => (
+	<SEO
+		title={data.mdx.frontmatter.title}
+		description={data.mdx.frontmatter.description}
+		pathname={data.mdx.fields.slug}
+		image={data.mdx.frontmatter.thumbnail.childImageSharp.fixed.src}
+		created_at={data.mdx.frontmatter.created_at}
+		updated_at={data.mdx.frontmatter.updated_at}
+	/>
+);

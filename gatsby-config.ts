@@ -4,7 +4,7 @@ const config: GatsbyConfig = {
 	siteMetadata: {
 		title: "Flash의 블로그",
 		author: "flash",
-		siteUrl: "https://flaassh.github.io",
+		siteUrl: "https://jobstudyflash.com",
 		description: "누구나 쉽게 따라할 수 있는, 남녀노소 모두를 위한 개발 블로그",
 	},
 	// More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
@@ -81,7 +81,7 @@ const config: GatsbyConfig = {
 						`,
 						output: "/feed.xml",
 						title: "Flash의 블로그",
-						site_url: `https://flaassh.github.io?utm_source=blog-feed&utm_medium=feed&utm_campaign=feed`,
+						site_url: `https://jobstudyflash.com?utm_source=blog-feed&utm_medium=feed&utm_campaign=feed`,
 						description: "누구나 쉽게 따라할 수 있는, 남녀노소 모두를 위한 개발 블로그",
 					},
 				],

@@ -47,7 +47,9 @@
             "components": [ "h2" ]
         }],
         "react/jsx-props-no-spreading": "off",        
-        "react/destructuring-assignment": "off"
+        "react/destructuring-assignment": "off",
+        "react/require-default-props": "off",
+        "camelcase": "off"
     },
     "settings": {
         "import/resolver": {

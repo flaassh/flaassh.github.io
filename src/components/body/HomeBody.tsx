@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from "gatsby";
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import HomePostItem from "./HomePostItem";
 import media from "../../libs/styles/media";
@@ -27,38 +27,33 @@ const InnerContainer = styled.div`
 export default function HomeBody() {
 	const data = useStaticQuery(graphql`
 		query AllMdx {
-			allMdx(sort: { frontmatter: { created_at: DESC } }, limit: 10) {
-				edges {
-					node {
-						id
-						frontmatter {
-							created_at(formatString: "YY.MM.DD")
-							description
-							title
-							thumbnail {
-								childImageSharp {
-									gatsbyImageData(width: 160)
-								}
+			allMdx(sort: { frontmatter: { created_at: DESC } }, limit: 100) {
+				nodes {
+					id
+					fields {
+						slug
+					}
+					frontmatter {
+						author
+						created_at
+						description
+						thumbnail {
+							childImageSharp {
+								gatsbyImageData(width: 160)
 							}
 						}
-						fields {
-							slug
-						}
+						title
 					}
 				}
 			}
 		}
 	`);
 
-	useEffect(() => {
-		console.log(data.allMdx);
-	}, [data]);
-
 	return (
 		<Container>
 			<InnerContainer>
-				{(data.allMdx.edges as Array<any>).map((edge) => (
-					<HomePostItem slug={edge.node.fields.slug} post={edge.node.frontmatter} />
+				{(data.allMdx.nodes as Array<any>).map((node) => (
+					<HomePostItem key={node.id} slug={node.fields.slug} post={node.frontmatter} />
 				))}
 			</InnerContainer>
 		</Container>

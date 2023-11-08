@@ -4,6 +4,7 @@ import React, { useMemo } from "react";
 import styled from "styled-components";
 import palette from "../../libs/styles/palette";
 import media from "../../libs/styles/media";
+import dateFormatter from "../../libs/formatter";
 
 const Container = styled.div`
 	width: 100%;
@@ -118,7 +119,7 @@ export default function HomePostItem({ slug, post }: Props) {
 				<LabelContainer>
 					<TitleLabel>{post.title}</TitleLabel>
 					<Label>{post.description}</Label>
-					<DateLabel className="date">{post.created_at}</DateLabel>
+					<DateLabel className="date">{dateFormatter(post.created_at)}</DateLabel>
 					<MoreLabel className="more">{"더보기 >"}</MoreLabel>
 				</LabelContainer>
 				{image && <GatsbyImage className="thumbnail" image={image} alt="post thumbnail" />}
