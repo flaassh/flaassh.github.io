@@ -194,6 +194,7 @@ export const pageQuery = graphql`
 			}
 			frontmatter {
 				title
+				description
 				created_at
 				updated_at
 				thumbnail {

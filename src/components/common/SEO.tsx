@@ -31,20 +31,27 @@ const SEO = ({ title, description, pathname, created_at, updated_at, image, chil
 			<meta name="twitter:url" content={seo.url} />
 			<meta name="twitter:description" content={seo.description} />
 			<meta name="twitter:card" content="summary" />
+			<meta property="twitter:image" content={seo.image} />
 			<meta property="og:type" content="website" />
 			<meta property="og:title" content={seo.title} />
 			<meta property="og:description" content={seo.description} />
 			<meta property="og:site_name" content={seo.title} />
+			<meta property="og:image" content={seo.image} />
 			<meta name="robots" content="index,follow" />
 			<link rel="apple-touch-icon" href="/favicon.ico" />
-			<meta name="image" content={seo.image} />
 			{created_at !== undefined && (
 				<script type="application/ld+json">
 					{JSON.stringify({
 						"@context": "http://schema.org",
 						"@type": "BlogPosting",
+						author: {
+							"@type": "Person",
+							name: "flash",
+							logo: null,
+						},
 						url: seo.url,
 						headline: seo.title,
+						description: seo.description,
 						datePublished: created_at,
 						dateModified: updated_at || created_at,
 						image: seo.image,
