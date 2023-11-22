@@ -15,8 +15,6 @@ const InnerContainer = styled.div`
 `;
 
 export default function Header() {
-	const heallo = "";
-
 	return (
 		<Container>
 			<InnerContainer />
